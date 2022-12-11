@@ -86,7 +86,7 @@ btnHold.addEventListener("click",function(){
     }
 
 
-    if(scores[activePlayer] >=10){
+    if(scores[activePlayer] >=100){
         playing = false;
         document.querySelector(`.player--${activePlayer}`).classList.add("player--winner");
         document.querySelector(`.current--${activePlayer}`).classList.remove("player--active");
@@ -96,7 +96,8 @@ btnHold.addEventListener("click",function(){
 
 })
 
-btnNew.addEventListener("click",init());
+btnNew.addEventListener("click",function(){
+    init()});
 
 
 // let player1 = 0;
